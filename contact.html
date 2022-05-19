@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>cozyter</title>
+  <style>
+ 
+   
+  .badge{
+    margin-top: 5px;
+     position: absolute;
+  right: 55%;
+ padding: 0.4em 0.64em !important;
+    font-size: 76%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 1.25rem !important;
+  background: red;
+    color: white;}
+    .float{
+	position:fixed;
+	width:60px;
+	height:60px;
+bottom: 55px !important;
+    right: 22px !important;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+  </style>
+
+  <link rel="shortcut icon" href="assets/img/Logo.png" type="image/x-icon" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+    integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <script src="https://unpkg.com/feather-icons"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@700&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, height=device-height initial-scale=1, shrink-to-fit=no" />
+</head>
+
+<body>
+ <div id="mySidebar" class="sidebar">
+<!--    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>-->
+    <a href="#" class="first"><i class="profile fas fa-user-circle"></i></a>
+    <a class="text-right" style="font-size: 17px;" href="index2.html"><i data-feather="home"></i>
+      الرئيسية
+    </a>
+    <div class="dropdown-divider"></div>
+
+   <a class="text-right" style="font-size: 17px;" href="qrcode.html"><i data-feather="camera"></i>مسح QR كود</a>
+    <div class="dropdown-divider"></div>
+    <a class="text-right" style="font-size: 17px;" href="build.html"><i data-feather="calendar"></i>
+      حجز الطاولات
+    </a>
+      <div class="dropdown-divider"></div>
+    <a class="text-right" style="font-size: 17px;" href="record.html"><i data-feather="clock"></i> السجل </a>
+    <div class="dropdown-divider"></div>
+    <a class="text-right" style="font-size: 17px;" href="notification.html"><i data-feather="bell"></i> <p  class="badge" id="cart">1</p> الاشعارات </a>
+    <div class="dropdown-divider"></div>
+      <a class="text-right d-flex align-items-center py-3" style="font-size: 17px;" href="contact.html"><i class="far fa-headset" style=" padding-left: 14px !important;"></i> الدعم الفني</a>
+    <div class="dropdown-divider"></div>
+    <a class="text-right   d-flex align-items-center py-3" style="font-size: 16px;" href="personal.html"><i class="far fa-user-circle" style=" padding-left: 14px !important;"></i> الملف الشخصي</a>
+  </div>
+
+
+  <div class="third-nav">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-2 text-center">
+            <p onclick="openNav()"> <i data-feather="align-justify"></i></p>
+        </div>
+        <div onclick="closeNav()" class="col-8 text-center">
+            <p>الدعم الفني</p>
+        </div>
+        <div class="col-2" onclick="closeNav()"><p></p></div>
+    </div>
+    </div>
+  </div>
+     <div class="container home">
+     <div class="row justify-content-center align-items-center flex-column ex" onclick="closeNav()">
+      <h1 >
+        هلا ,تواصل معنا على الايميل <br>
+      <span style="color: #FD7C16;">
+        cozyter@hgi.sa
+
+      </span>
+      <br>
+      وحنرد بأسرع وقت
+      </h1>
+     </div>
+     </div>
+  <a href="https://api.whatsapp.com/send?phone=51955081075&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank">
+<i class="fa fa-whatsapp my-float"></i>
+</a>
+     <div class="footer">
+      <p>جميع الحقوق محفوظة © 2021</p>
+    </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Popper.JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+    integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="assets/js/scripts.js" type="application/javascript"></script>
+  <script>
+    feather.replace();
+  </script>
+</body>
+
+</html>
